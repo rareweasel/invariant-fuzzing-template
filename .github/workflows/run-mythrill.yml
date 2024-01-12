@@ -42,12 +42,6 @@ jobs:
           forge build --sizes
         id: build
 
-        # REMOVE? TODO
-      #- name: Run Forge tests
-      #  run: |
-      #    forge test -vvv
-      #  id: test
-
       - name: Run Mythril Dependencies
         run: |
           sudo apt install libssl-dev python3-dev python3-pip
@@ -64,7 +58,7 @@ jobs:
         run: |
           # brew install solc-select
           # solc-select install 0.8.20
-          export SOLC_VERSION=0.8.20
+          export SOLC_VERSION=0.8.18
 
       - name: Run Mythril
         id: mythril
