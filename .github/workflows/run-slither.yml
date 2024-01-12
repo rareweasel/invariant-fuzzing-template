@@ -50,7 +50,6 @@ jobs:
         uses: crytic/slither-action@v0.3.0
         id: slither
         with:
-          #solc-version: 0.8.19
-          fail-on: low # Required to avoid failing the CI run regardless of findings.
+          fail-on: all # Required to avoid failing the CI run regardless of findings.
           # slither-args: --filter-paths "./script|./lib|./test" --exclude naming-convention,solc-version
           slither-config: ./slither.config.json
