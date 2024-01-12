@@ -2,7 +2,7 @@
 pragma solidity 0.8.18;
 
 import {Test, console2} from "forge-std/Test.sol";
-import {AllowList} from "../src/AllowList.sol";
+import {AllowList} from "../../src/AllowList.sol";
 
 contract AllowListTest is Test {
     AllowList public allowList;
