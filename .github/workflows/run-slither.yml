@@ -48,6 +48,6 @@ jobs:
         id: slither
         with:
           solc-version: 0.8.19
-          target: src
+          target: 'src/'
           node-version: 18.15
           fail-on: medium
