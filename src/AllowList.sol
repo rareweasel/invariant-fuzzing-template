@@ -23,9 +23,11 @@ contract AllowList {
 
     function removeItem(address _item) external returns (bool) {
         require(msg.sender == owner, "only owner");
-        for (uint256 i = 0; i < allowList.length; i++) {
+        uint256 _length = allowList.length;
+        for (uint256 i = 0; i < _length; i++) {
             if (allowList[i] == _item) {
-                allowList[i] = allowList[allowList.length - 1];
+                allowList[i] = allowList[_length - 1];
+                // slither-disable-next-line costly-operations-inside-a-loop
                 allowList.pop();
                 return true;
             }
