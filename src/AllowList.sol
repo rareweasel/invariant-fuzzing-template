@@ -27,7 +27,7 @@ contract AllowList {
         for (uint256 i = 0; i < _length; i++) {
             if (allowList[i] == _item) {
                 allowList[i] = allowList[_length - 1];
-                // slither-disable-next-line costly-operations-inside-a-loop
+                // slither-disable-next-line costly-loop
                 allowList.pop();
                 return true;
             }
