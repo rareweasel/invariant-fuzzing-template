@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.19;
+pragma solidity 0.8.18;
 
 contract AllowList {
     address[] public allowList;
-    address public owner;
+    address public immutable owner;
 
     constructor(address _owner, address[] memory _allowList) {
         require(_owner != address(0), "invalid owner");
