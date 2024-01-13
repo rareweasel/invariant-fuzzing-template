@@ -52,4 +52,4 @@ jobs:
         run: cargo --help && cargo install aderyn
 
       - name: Run Aderyn
-        run: aderyn . -o report.md -s ./src/,./script/ 
+        run: aderyn . -o report.md -s ./src/,./script/ && cat report.md
