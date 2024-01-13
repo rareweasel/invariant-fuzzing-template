@@ -51,5 +51,8 @@ jobs:
       - name: Check Cargo & Install Aderyn
         run: cargo --help && cargo install aderyn
 
+      - name: Check Aderyn version
+        run: aderyn -V
+
       - name: Run Aderyn
-        run: aderyn . -o report.md -s ./src/,./script/ && cat report.md
+        run: aderyn . -o report.md && cat report.md
