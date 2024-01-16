@@ -6,6 +6,15 @@ on:
 
 env:
   FOUNDRY_PROFILE: ci
+  ETH_MAINNET_RPC_URL: ${{ secrets.ETH_MAINNET_RPC_URL}}
+  BSC_MAINNET_RPC_URL: ${{ secrets.BSC_MAINNET_RPC_URL}}
+  MATIC_MAINNET_RPC_URL: ${{ secrets.MATIC_MAINNET_RPC_URL}}
+  ARB_MAINNET_RPC_URL: ${{ secrets.ARB_MAINNET_RPC_URL}}
+  OP_MAINNET_RPC_URL: ${{ secrets.OP_MAINNET_RPC_URL}}
+  AVAX_MAINNET_RPC_URL: ${{ secrets.AVAX_MAINNET_RPC_URL}}
+  FTM_MAINNET_RPC_URL: ${{ secrets.FTM_MAINNET_RPC_URL}}
+  BASE_MAINNET_RPC_URL: ${{ secrets.BASE_MAINNET_RPC_URL}}
+  ZKSYNC_MAINNET_RPC_URL: ${{ secrets.ZKSYNC_MAINNET_RPC_URL}}
 
 jobs:
   check:
@@ -43,15 +52,11 @@ jobs:
         id: build
 
       - name: Run Forge tests
-        env:
-          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
         run: |
           forge test -vvv
         id: test
 
       - name: Run Forge Coverage
-        env:
-          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
         run: |
           forge coverage
         id: coverage
