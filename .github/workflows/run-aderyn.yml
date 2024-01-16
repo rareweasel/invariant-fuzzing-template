@@ -41,6 +41,7 @@ jobs:
 
       - name: Run Forge build
         run: |
+          forge remappings
           forge --version
           forge build --sizes
         id: build
