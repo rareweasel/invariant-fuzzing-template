@@ -7,7 +7,7 @@ ffi = true     # to enable vyperDeployer calling vyper compiler
 
 # Update Slither/Mythrill config files and GH actions when you update the dependencies:
 remappings = [
-    "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+    "@openzeppelin/=lib/openzeppelin-contracts/",
     "forge-std/=lib/forge-std/src/"
 ]
 
@@ -23,3 +23,5 @@ mainnet = "${MAINNET_RPC_URL}"
 
 [profile.default.invariant]
 fail_on_revert = false
+runs = 2000
+depth = 23

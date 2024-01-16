@@ -113,5 +113,5 @@ coverage.json
 #Visual studio
 .vscode/*
 
-lib
+#lib
 out
