@@ -9,7 +9,7 @@
     "legacy_ast": false,
     "exclude_dependencies": true,
     "solc_remaps": [
-        "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
         "forge-std/=lib/forge-std/src/"
     ]
 }
