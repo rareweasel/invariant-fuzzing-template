@@ -2,6 +2,7 @@
 
 ## Posts
 
+- Forge - [Invariant Testing](https://book.getfoundry.sh/forge/invariant-testing)
 - Nascent - [You're Writing Require Statements Wrong](https://www.nascent.xyz/idea/youre-writing-require-statements-wrong)
 - Rare Skills - [Invariant Testing Solidity](https://www.rareskills.io/post/invariant-testing-solidity)
 - Mirror - [Invariant Testing WETH With Foundry](https://mirror.xyz/horsefacts.eth/Jex2YVaO65dda6zEyfM_-DXlXhOWCAoSpOx5PLocYgw)
