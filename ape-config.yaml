@@ -1,5 +1,7 @@
 name: invariant-fuzzing-template
-
+plugins:
+  - name: vyper
+  - name: foundry
 dependencies:
   - name: OpenZeppelin
     github: OpenZeppelin/openzeppelin-contracts
