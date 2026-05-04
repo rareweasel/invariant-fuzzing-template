@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-python@v5
 
       - name: Install Vyper
-        run: pip install vyper==0.3.7
+        run: pip install vyper==0.4.3
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
