@@ -24,7 +24,7 @@ jobs:
       contents: read
       security-events: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: recursive
 
@@ -32,12 +32,6 @@ jobs:
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
-      
-      - name: Install Forge Dependencies
-        run: |
-          forge install foundry-rs/forge-std --no-commit
-          forge install openzeppelin/openzeppelin-contracts --no-commit
-        id: install
 
       - name: Run Forge build
         run: |

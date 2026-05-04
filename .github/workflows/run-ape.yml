@@ -40,11 +40,6 @@ jobs:
         name: Install Foundry
         with:
           version: nightly
-      - name: Install Forge Dependencies
-        run: |
-          forge install foundry-rs/forge-std --no-commit
-          forge install openzeppelin/openzeppelin-contracts --no-commit
-        id: install
       - uses: ApeWorX/github-action@v2.7
         with:
             python-version: '3.10' # (optional)
